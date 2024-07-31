@@ -1,14 +1,69 @@
-# Java Chat 
+---
 
-Chat is an application for communicating a customer with an agent. When writing a message, the customer becomes in the queue and waits for the agent to respond. In turn, when registering, the agent also becomes a queue of agents and expects the customer.
+## Project Title:  
+**Real-Time Chat Application**
 
-## Customer Commands
-+ **!register UserName** - Register in the client
-+ **!leave** - Leave the chat with the agent (when quitting the queue, on the next сutomer message, it returns to the queue)
-+ **!exit** - Exit the client 
+## Description:  
+A web-based real-time chat application designed to provide instant messaging, media sharing, and push notifications for a seamless communication experience.
 
-## Agent Commands
-+ **!register UserName** - Register in the client
-+ **!skip** - Switch to another client
-+ **!exit** - Exit the client
+## Product Overview and Key Features:
 
+- **User Authentication:**  
+  - Secure login, registration, and profile management.
+
+- **Real-Time Messaging:**  
+  - Instant one-on-one and group chats with live updates.
+  - Typing indicators and message read receipts.
+
+- **Media Sharing:**  
+  - Share images, videos, and files with inline previews.
+
+- **Notifications:**  
+  - Push notifications for new messages.
+
+- **Search and Archive:**  
+  - Advanced search functionality and chat archiving.
+
+- **Responsive Design:**  
+  - Mobile-friendly UI, ensuring usability across devices.
+
+## Integrations and Tech Stack:
+
+### Technologies Used:
+- **Frontend:**  
+  - React, HTML, CSS for a dynamic and responsive user interface.
+
+- **Backend:**  
+  - Java (Spring Boot) for backend services.  
+  - WebSocket for real-time messaging.  
+  - MySQL for structured data storage.  
+  - Redis for low-latency message handling.
+
+- **Other Integrations:**  
+  - Firebase for push notifications.  
+  - AWS S3 for secure and scalable media storage.
+
+## Contribution:
+
+1. **Frontend Development:**  
+   - Developed React components for chat interfaces and profile management.
+
+2. **Backend Development:**  
+   - Built RESTful APIs and implemented WebSocket for real-time messaging using Java (Spring Boot).
+
+3. **Database Management:**  
+   - Designed MySQL schemas and integrated Redis for efficient message handling.
+
+4. **Integrations:**  
+   - Implemented Firebase for push notifications and integrated AWS S3 for media storage.
+
+## Impact:
+
+- **Enhanced User Engagement:**  
+  - Provided a seamless real-time messaging experience with reliable communication features.
+
+- **Improved Efficiency:**  
+  - Optimized backend processes for faster response times and improved performance.
+
+- **User-Friendly Experience:**  
+  - Delivered an intuitive and responsive interface, accessible across all devices.
