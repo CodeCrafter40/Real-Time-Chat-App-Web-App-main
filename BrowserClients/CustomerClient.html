@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Customer Client</title>
+  <script src="data/User.js"></script>
+  <script src="data/Message.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+</body>
+</html>
+
+
+<body>
+
+<div id="autorisation">
+  <div>
+    <h2>Введите свое имя</h2>
+    <input type="text" id="login">
+    <br>
+    <button type="button" name="button" class="btn" onclick="autoris()">Принять</button>
+  </div>
+</div>
+<div id="chat">
+  <div id="msg-box"></div>
+  <input id="messageField" type="text" onkeydown = "if (event.keyCode == 13)
+                        checkAnswer()">
+  <input onclick="checkAnswer();" value="Отправить" type="button" class="btn send-message" id="inp">
+
+</div>
+
+<script>
+    let TYPE = "CUSTOMER";
+    function checkAnswer() {
+        var strMessage = msgField.value;
+        try {
+            if (strMessage && (strMessage[0] == "!")) {
+              let words = strMessage.split(" ")
+              if((currentUser == null) && (words.length = 2) && (words[0] == '!register')) {
+                currentUser = new User(words[1], "CUSTOMER")
+                msg = new Message(currentUser, "", currChat, "reg")
+                showMessage(new Message(new User("Server", "NONE"), "Hello, " + currentUser.name, -1))
+                sendMsg(msg)
+              } else if (currentUser != null) {
+                if(words[0] == "!exit") {
+                  msg = new Message(currentUser, "", currChat, "exit")
+                  sendMsg(msg)
+                } else if(words[0] == "!leave") {
+                  msg = new Message(currentUser, "", currChat, "leave")
+                  sendMsg(msg)
+                }
+              }
+            } else if (currentUser != null) {
+
+              msg = new Message(currentUser, strMessage, currChat)
+              console.log(msg)
+              sendMsg(msg)
+              showMessage(msg)
+            }
+
+        } catch(err) {
+          console.log(err)
+        }
+        msgField.value = "";
+
+    }
+
+</script>
+<script src="Client.js"></script>
+</body>
+</html>

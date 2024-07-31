@@ -1,0 +1,11 @@
+Chat/.idea
+Chat/target
+Server/.idea
+Server/target
+CustomerClient/.idea
+CustomerClient/target
+*.iml
+.idea
+*.log
+AgentClient/target
+
