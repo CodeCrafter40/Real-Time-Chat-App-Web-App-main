@@ -67,3 +67,12 @@ A web-based real-time chat application designed to provide instant messaging, me
 
 - **User-Friendly Experience:**  
   - Delivered an intuitive and responsive interface, accessible across all devices.
+
+## Snapshots:
+
+![image](https://github.com/user-attachments/assets/eb422b5f-655b-43e8-a054-f2a4c4705ca5)
+![image](https://github.com/user-attachments/assets/d32bf7ab-2f83-4b32-a91a-63961b708743)
+![image](https://github.com/user-attachments/assets/09c6598e-b0a5-4c0d-a05d-e6058845fd2d)
+
+
+
