@@ -30,6 +30,21 @@ A web-based real-time chat application designed to provide instant messaging, me
 ## Integrations and Tech Stack:
 
 ### Technologies Used:
+
+## Tech Stack
+
+![React](https://img.shields.io/badge/React-18.2.0-blueviolet)
+![HTML](https://img.shields.io/badge/HTML-5.2-orange)
+![CSS](https://img.shields.io/badge/CSS-3.0-blue)
+![Java](https://img.shields.io/badge/Java-17.0.2-blue)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.6.6-brightgreen)
+![WebSocket](https://img.shields.io/badge/WebSocket-1.0.0-blue)
+![MySQL](https://img.shields.io/badge/MySQL-8.0.28-orange)
+![Redis](https://img.shields.io/badge/Redis-7.0.5-red)
+![Docker](https://img.shields.io/badge/Docker-20.10.12-lightblue)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-blue)
+
+
 - **Frontend:**  
   - React, HTML, CSS for a dynamic and responsive user interface.
 
